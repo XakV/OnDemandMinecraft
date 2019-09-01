@@ -1,4 +1,8 @@
 #!/bin/sh
+#TODO - get number of active connections
+#TODO - create systemd service for each container
+#TODO - Find out if a systemd service can shut down on it's own
+#TODO - Can a socket connection work better
 SERVICE='server.jar'
 if ps ax | grep -v grep | grep $SERVICE > /dev/null; then
     	PLAYERSEMPTY=" There are 0 of a max 20 players online"
